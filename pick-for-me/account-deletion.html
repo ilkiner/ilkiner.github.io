@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Account Deletion — Pick For Me</title>
+  <title>Account Deletion / Hesap Silme / Eliminación de cuenta — Pick For Me</title>
   <style>
     :root {
       --bg: #0F0F1E;
@@ -43,16 +43,32 @@
       font-weight: 700; padding: 14px 28px; border-radius: 12px; margin: 8px 0 24px;
     }
     .cta:hover { text-decoration: none; opacity: 0.9; }
+    .lang-divider {
+      margin: 64px 0 40px; padding-top: 40px; border-top: 2px solid var(--border);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .lang-divider .logo { margin-bottom: 0; }
+    .langs { font-size: 14px; color: var(--secondary); margin-bottom: 32px; }
+    .langs a { font-weight: 600; }
     footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border);
              color: var(--secondary); font-size: 13px; }
   </style>
 </head>
 <body>
   <div class="container">
+    <nav class="langs" aria-label="Language">
+      <a href="#en" hreflang="en">English</a> &nbsp;·&nbsp;
+      <a href="#tr" hreflang="tr">Türkçe</a> &nbsp;·&nbsp;
+      <a href="#es" hreflang="es">Español</a>
+    </nav>
+
+    <!-- ============ ENGLISH ============ -->
+    <section id="en" lang="en">
     <header>
       <div class="logo">Pick For Me</div>
       <h1>Account &amp; Data Deletion</h1>
-      <p class="meta">Hesap ve Veri Silme Talebi</p>
+      <p class="meta">This page is available in English, Turkish and Spanish. If the versions differ,
+      the English version prevails.</p>
     </header>
 
     <div class="highlight">
@@ -68,6 +84,8 @@
       <li>Tap <strong>Delete Account</strong> (at the bottom)</li>
       <li>Confirm twice — your account and all data are deleted immediately</li>
     </ol>
+    <p>If our server can't be reached at that moment, the app tells you, keeps you signed in
+    and tries again every time you open it until the deletion is complete.</p>
 
     <h2>Option 2 — Request deletion by email</h2>
     <p>If you no longer have the app installed, send us a deletion request from the
@@ -80,7 +98,8 @@
 
     <h2>What is deleted</h2>
     <ul>
-      <li>Account credentials (email, hashed password)</li>
+      <li>Account credentials: your email address and hashed password and, if you signed in
+      with Google, your Google account ID, name and profile photo URL</li>
       <li>Saved lists synced to the cloud</li>
       <li>Activity history synced to the cloud</li>
       <li>Your customer record at RevenueCat, the service that manages Pick For Me Pro
@@ -95,9 +114,10 @@
     <p><strong>Subscriptions:</strong> deleting your account does not cancel an active
     Google Play subscription. Cancel it in Google Play → Payments &amp; subscriptions →
     Subscriptions, or you may continue to be charged.</p>
-    <p>Data stored only on your device (local history, preferences) is removed when you
+    <p>Deleting your account in the app also removes your saved lists and history from that
+    device. Other data stored only on your device (preferences) is removed when you
     uninstall the app. Anonymized analytics that cannot be linked to you may be retained
-    as described in our <a href="./privacy-policy.html">Privacy Policy</a>.</p>
+    as described in our <a href="./privacy-policy.html#en">Privacy Policy</a>.</p>
 
     <h2>Deleting your data without deleting your account</h2>
     <p>You do not have to delete your account to remove your data. Inside the app you can:</p>
@@ -113,14 +133,31 @@
     <a href="mailto:pickforme.app@gmail.com?subject=Data%20Deletion%20Request%20—%20Pick%20For%20Me">pickforme.app@gmail.com</a>
     to ask us to delete specific data while keeping your account.</p>
 
-    <h2>Türkçe — Hesap Silme</h2>
+    </section>
+
+    <!-- ============ TÜRKÇE ============ -->
+    <section id="tr" lang="tr">
+    <div class="lang-divider">
+      <div class="logo">Pick For Me</div>
+    </div>
+
+    <header>
+      <h1>Hesap ve Veri Silme</h1>
+      <p class="meta">Bu sayfa İngilizce, Türkçe ve İspanyolca sunulur. Metinler arasında fark olursa
+      İngilizce metin esas alınır.</p>
+    </header>
+
+    <h2>Hesap Silme</h2>
     <p><strong>Uygulama içinden (anında):</strong> Pick For Me → Ayarlar → en alttaki
-    <strong>Hesabı Sil</strong> → iki kez onayla. Hesabın ve tüm verilerin anında silinir.</p>
+    <strong>Hesabı Sil</strong> → iki kez onayla. Hesabın ve tüm verilerin anında silinir; listelerin ve geçmişin bu
+    cihazdan da silinir. Sunucumuza o an ulaşılamazsa uygulama bunu söyler, oturumunu açık
+    tutar ve silme tamamlanana kadar her açılışta yeniden dener.</p>
     <p><strong>E-posta ile:</strong> Hesabına bağlı e-posta adresinden
     <a href="mailto:pickforme.app@gmail.com?subject=Hesap%20Silme%20Talebi%20—%20Pick%20For%20Me">pickforme.app@gmail.com</a>
     adresine "Hesap Silme Talebi" konulu bir e-posta gönder. Talepler en geç
     <strong>30 gün</strong> içinde işlenir.</p>
-    <p><strong>Silinenler:</strong> hesap bilgileri, buluta kaydedilmiş listeler,
+    <p><strong>Silinenler:</strong> hesap bilgileri (e-posta adresin ve parolanın özeti; Google
+    ile girdiysen Google hesap kimliğin, adın ve profil fotoğrafı adresin), buluta kaydedilmiş listeler,
     aktivite geçmişi ve Pro satın alımlarını yöneten RevenueCat'teki müşteri kaydın
     (rastgele bir hesap kimliği ve satın alma geçmişi; adını ya da e-postanı içermez).
     Bu işlem geri alınamaz.</p>
@@ -132,7 +169,7 @@
     etmez. Google Play → Ödemeler ve abonelikler → Abonelikler bölümünden iptal etmezsen
     ücretlendirilmeye devam edebilirsin.</p>
 
-    <h2>Türkçe — Hesabı Silmeden Veri Silme</h2>
+    <h2>Hesabı Silmeden Veri Silme</h2>
     <p>Verilerini kaldırmak için hesabını silmek zorunda değilsin. Uygulama içinden:</p>
     <ul>
       <li><strong>Kayıtlı listelerini tek tek silebilirsin</strong> — <strong>Kayıtlı Listeler</strong>
@@ -144,6 +181,82 @@
     Dilersen hesabını koruyup belirli verilerinin silinmesi için
     <a href="mailto:pickforme.app@gmail.com?subject=Veri%20Silme%20Talebi%20—%20Pick%20For%20Me">pickforme.app@gmail.com</a>
     adresine de yazabilirsin.</p>
+    </section>
+
+    <!-- ============ ESPAÑOL ============ -->
+    <section id="es" lang="es">
+    <div class="lang-divider">
+      <div class="logo">Pick For Me</div>
+    </div>
+
+    <header>
+      <h1>Eliminación de cuenta y datos</h1>
+      <p class="meta">Esta página está disponible en inglés, turco y español. Si las versiones difieren,
+      prevalece la versión en inglés.</p>
+    </header>
+
+    <div class="highlight">
+      <p><strong>Al eliminar tu cuenta se borran:</strong> tus credenciales de acceso, tus listas
+      guardadas, tu historial de actividad y tu registro de compras en nuestro proveedor de suscripciones
+      (RevenueCat). Esta acción es permanente y no se puede deshacer.</p>
+    </div>
+
+    <h2>Opción 1 — Eliminar desde la app (al instante)</h2>
+    <ol>
+      <li>Abre <strong>Pick For Me</strong></li>
+      <li>Ve a <strong>Ajustes</strong></li>
+      <li>Toca <strong>Eliminar cuenta</strong> (al final)</li>
+      <li>Confirma dos veces: tu cuenta y todos tus datos se eliminan de inmediato</li>
+    </ol>
+    <p>Si en ese momento no se puede contactar con nuestro servidor, la app te lo indica, mantiene tu
+    sesión iniciada y vuelve a intentarlo cada vez que la abres hasta que se completa la eliminación.</p>
+
+    <h2>Opción 2 — Solicitar la eliminación por correo electrónico</h2>
+    <p>Si ya no tienes la app instalada, envíanos una solicitud de eliminación desde la dirección de
+    correo electrónico asociada a tu cuenta:</p>
+    <a class="cta" href="mailto:pickforme.app@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta%20%E2%80%94%20Pick%20For%20Me&body=Por%20favor%2C%20elimina%20mi%20cuenta%20de%20Pick%20For%20Me%20y%20todos%20los%20datos%20asociados.%0ACorreo%20de%20la%20cuenta%3A%20">
+      Solicitar la eliminación de la cuenta
+    </a>
+    <p>Tramitamos las solicitudes por correo en un plazo de <strong>30 días</strong>. Recibirás una
+    confirmación cuando tu cuenta y tus datos se hayan eliminado.</p>
+
+    <h2>Qué se elimina</h2>
+    <ul>
+      <li>Credenciales de la cuenta: tu dirección de correo electrónico y tu contraseña protegida con hash
+      y, si iniciaste sesión con Google, el ID de tu cuenta de Google, tu nombre y la URL de tu foto de
+      perfil</li>
+      <li>Las listas guardadas sincronizadas en la nube</li>
+      <li>El historial de actividad sincronizado en la nube</li>
+      <li>Tu registro de cliente en RevenueCat, el servicio que gestiona las compras de Pick For Me Pro
+      (un ID de cuenta aleatorio y tu historial de compras; no contiene tu nombre ni tu correo
+      electrónico)</li>
+    </ul>
+    <p>El registro de RevenueCat se elimina con la misma solicitud. Si solo falla ese paso (por ejemplo,
+    porque el proveedor no está disponible en ese momento), tu cuenta y tus datos se eliminan igualmente,
+    y el registro restante ya no puede vincularse a ninguna cuenta. Escribe a <a href="mailto:pickforme.app@gmail.com">pickforme.app@gmail.com</a> si quieres que
+    confirmemos que se ha eliminado.</p>
+    <p><strong>Suscripciones:</strong> eliminar tu cuenta no cancela una suscripción activa de Google
+    Play. Cancélala en Google Play → Pagos y suscripciones → Suscripciones; de lo contrario, es posible
+    que se te siga cobrando.</p>
+    <p>Al eliminar tu cuenta desde la app también se borran de ese dispositivo tus listas guardadas y tu
+    historial. Los demás datos guardados solo en tu dispositivo (preferencias) se eliminan al desinstalar
+    la app. Las analíticas anonimizadas que no pueden vincularse contigo pueden conservarse según se
+    describe en nuestra <a href="./privacy-policy.html#es">Política de Privacidad</a>.</p>
+
+    <h2>Eliminar tus datos sin eliminar tu cuenta</h2>
+    <p>No tienes que eliminar tu cuenta para borrar tus datos. Dentro de la app puedes:</p>
+    <ul>
+      <li><strong>Eliminar listas guardadas una a una</strong>: abre <strong>Mis Listas</strong> y usa la
+      acción de eliminar en cualquier lista. La lista se elimina de tu dispositivo y de la nube.</li>
+      <li><strong>Borrar tu historial de actividad</strong>: abre el historial y toca
+      <strong>Borrar historial</strong>. Tu historial de actividad se borra de tu dispositivo y de la
+      nube.</li>
+    </ul>
+    <p>Ninguna de estas acciones elimina tu cuenta: tu sesión sigue activa y solo se eliminan los datos
+    que elijas. También puedes escribir a
+    <a href="mailto:pickforme.app@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20datos%20%E2%80%94%20Pick%20For%20Me">pickforme.app@gmail.com</a>
+    para pedirnos que eliminemos datos concretos manteniendo tu cuenta.</p>
+    </section>
 
     <footer>
       <p>Pick For Me · <a href="mailto:pickforme.app@gmail.com">pickforme.app@gmail.com</a> ·

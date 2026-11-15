@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Pick For Me</title>
+  <title>Privacy Policy / Gizlilik Politikası / Política de Privacidad — Pick For Me</title>
   <style>
     :root {
       --bg: #0F0F1E;
@@ -37,16 +37,33 @@
       border-radius: 12px; padding: 20px 24px; margin: 24px 0;
     }
     .highlight p { margin: 0; color: var(--text); }
+    .lang-divider {
+      margin: 64px 0 40px; padding-top: 40px; border-top: 2px solid var(--border);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .lang-divider .logo { margin-bottom: 0; }
+    .langs { font-size: 14px; color: var(--secondary); margin-bottom: 32px; }
+    .langs a { font-weight: 600; }
     footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border);
              color: var(--secondary); font-size: 13px; }
   </style>
 </head>
 <body>
   <div class="container">
+    <nav class="langs" aria-label="Language">
+      <a href="#en" hreflang="en">English</a> &nbsp;·&nbsp;
+      <a href="#tr" hreflang="tr">Türkçe</a> &nbsp;·&nbsp;
+      <a href="#es" hreflang="es">Español</a>
+    </nav>
+
+    <!-- ============ ENGLISH ============ -->
+    <section id="en" lang="en">
     <header>
       <div class="logo">Pick For Me</div>
       <h1>Privacy Policy</h1>
       <p class="meta">Last updated: November 2026 &nbsp;·&nbsp; Effective: November 2026</p>
+      <p class="meta">This policy is available in English, Turkish and Spanish. If the versions differ,
+      the English version prevails.</p>
     </header>
 
     <div class="highlight">
@@ -68,13 +85,17 @@
           statistics are processed as described below.</li>
       <li><strong>Account data</strong> (only if you sign in): email address and a securely hashed password,
           or, with “Continue with Google”, your Google account ID, name, email address and profile photo URL.</li>
-      <li><strong>Synced content</strong> (only if you sign in): your saved lists and results history.</li>
+      <li><strong>Synced content</strong> (only if you sign in): your saved lists and results history.
+          Results can contain text you type yourself, for example the names of players or team members in
+          Order &amp; Teams or the cards shown in Truth or Dare, so names you enter for other people are
+          stored with your history and synced as well.</li>
       <li><strong>Purchases</strong>: subscription status and purchase history, managed by RevenueCat and
           Google Play. We never see or store your payment card details.</li>
-      <li><strong>Crash and diagnostic data</strong>: error reports, device model, OS and app version.
-          IP addresses are not attached to reports.</li>
-      <li><strong>Usage statistics</strong> (optional; off in the EU/UK unless you consent, on by default
-          elsewhere): which features are used (for example “result generated”
+      <li><strong>Crash and diagnostic data</strong>: error reports and a sample of performance traces (how
+          long screens and network requests take), device model, OS and app version. IP addresses are not
+          attached to reports, and query parameters are removed from the request addresses they contain.</li>
+      <li><strong>Usage statistics</strong> (optional; off in the EU/UK unless you switch on “Share anonymous
+          usage data”, on by default elsewhere): which features are used (for example “result generated”
           or “paywall viewed”), linked to a random identifier and never to your name, email or account.</li>
       <li><strong>Advertising data</strong> (free version): advertising ID, approximate location derived from
           your IP address, and ad interactions, collected by Google AdMob.</li>
@@ -92,12 +113,14 @@
       <li><strong>RevenueCat</strong> (RevenueCat Inc., USA): managing subscriptions and restoring purchases.
           <em>Legal basis:</em> performance of the contract (your subscription).
           <a href="https://www.revenuecat.com/privacy" target="_blank">Privacy policy</a></li>
-      <li><strong>Sentry</strong> (Functional Software Inc.; EU data region, Germany): crash and error reporting.
-          <em>Legal basis:</em> legitimate interest in keeping the app working and secure.
+      <li><strong>Sentry</strong> (Functional Software Inc.; EU data region, Germany): crash and error reporting,
+          and a sample of performance traces. <em>Legal basis:</em> legitimate interest in keeping the app working and secure.
           <a href="https://sentry.io/privacy/" target="_blank">Privacy policy</a></li>
       <li><strong>PostHog</strong> (PostHog Inc.; EU cloud): optional anonymous usage statistics. Location lookup
-          from IP addresses is disabled. <em>Legal basis:</em> your consent in the EU/UK (asked in the same consent
-          form as ads); legitimate interest in improving the app elsewhere. You can switch it off anytime in Settings → “Share anonymous usage data”.
+          from IP addresses is disabled. <em>Legal basis:</em> in the EU/UK, your consent, given with the “Share
+          anonymous usage data” switch on the terms screen when you first open the app or in Settings. It is
+          separate from Google’s ad consent form; withdrawing measurement consent in that form also switches
+          usage statistics off. Elsewhere, legitimate interest in improving the app. You can switch it off anytime in Settings → “Share anonymous usage data”.
           <a href="https://posthog.com/privacy" target="_blank">Privacy policy</a></li>
       <li><strong>Supabase</strong> (Supabase Inc.; hosted on AWS in Frankfurt, Germany): accounts, sign-in and
           syncing your lists and history. Row-level security means only you can read your data.
@@ -133,7 +156,7 @@
     <ul>
       <li><strong>In the app</strong>: Settings → Delete Account. This permanently deletes your synced lists and
           history, your account and your RevenueCat customer record.</li>
-      <li><strong>Without the app</strong>: use the <a href="https://ilkiner.github.io/pick-for-me/account-deletion.html">account
+      <li><strong>Without the app</strong>: use the <a href="https://ilkiner.github.io/pick-for-me/account-deletion.html#en">account
           deletion page</a> or email <a href="mailto:pickforme.app@gmail.com">pickforme.app@gmail.com</a> with the
           subject “Delete my account”. We respond within 30 days.</li>
       <li><strong>Guest data</strong> lives only on your device; uninstalling the app removes it.</li>
@@ -144,7 +167,7 @@
     <h2>7. Your choices and rights</h2>
     <ul>
       <li><strong>Ad consent</strong> (EU/UK): change or withdraw it anytime in Settings → Privacy choices.</li>
-      <li><strong>Usage statistics</strong>: switch off in Settings → “Share anonymous usage data”.</li>
+      <li><strong>Usage statistics</strong>: switch on or off in Settings → “Share anonymous usage data”.</li>
       <li><strong>Advertising ID</strong>: reset or delete it in your Android settings.</li>
       <li>Depending on where you live (for example under the GDPR), you have the right to access, correct,
           delete or export your data, to restrict or object to processing, and to withdraw consent at any time.
@@ -158,8 +181,8 @@
     records.</p>
 
     <h2>9. Children</h2>
-    <p>Pick For Me is suitable for everyone but is not directed at children under 13, and we do not knowingly
-    collect their personal data. Ads are limited to content rated “G” (general audiences). If you believe a
+    <p>Pick For Me is not intended for children under 13, and we do not knowingly collect their personal
+    data. Ads are limited to content rated “G” (general audiences). If you believe a
     child has given us personal data, contact us and we will delete it.</p>
 
     <h2>10. Changes to this policy</h2>
@@ -168,9 +191,316 @@
 
     <h2>11. Contact</h2>
     <p>Questions or data requests: <a href="mailto:pickforme.app@gmail.com">pickforme.app@gmail.com</a></p>
+    </section>
+
+    <!-- ============ TÜRKÇE ============ -->
+    <section id="tr" lang="tr">
+    <div class="lang-divider">
+      <div class="logo">Pick For Me</div>
+    </div>
+
+    <header>
+      <h1>Gizlilik Politikası</h1>
+      <p class="meta">Son güncelleme: Kasım 2026 &nbsp;·&nbsp; Yürürlük: Kasım 2026</p>
+      <p class="meta">Bu politika İngilizce, Türkçe ve İspanyolca sunulur. Metinler arasında fark olursa
+      İngilizce metin esas alınır.</p>
+    </header>
+
+    <div class="highlight">
+      <p><strong>Kısaca:</strong> Pick For Me'yi hesapsız kullanabilirsin; bu durumda listelerin ve
+      geçmişin cihazında kalır. Giriş yaparsan bunlar AB'deki veritabanımıza senkronlanır. Reklamlar
+      (ücretsiz sürüm) Google AdMob tarafından gösterilir ve AB/BK'da önce rızan istenir. Anonim kullanım
+      istatistikleri isteğe bağlıdır: AB/BK'da rıza vermedikçe kapalı kalır; diğer yerlerde varsayılan
+      olarak açıktır ve Ayarlar'dan istediğin zaman kapatabilirsin. Verilerini satmayız.</p>
+    </div>
+
+    <h2>1. Veri sorumlusu</h2>
+    <p>Burada açıklanan kişisel verilerin veri sorumlusu Pick For Me'dir (“biz”).
+    İletişim: <a href="mailto:pickforme.app@gmail.com">pickforme.app@gmail.com</a>.</p>
+
+    <h2>2. Topladığımız veriler</h2>
+    <ul>
+      <li><strong>Hesapsız (misafir)</strong>: kayıtlı listelerin, sonuç geçmişin ve ayarların yalnızca
+          cihazında saklanır. Reklamlar, satın almalar, hata raporları ve (izin verirsen) kullanım
+          istatistikleri aşağıda açıklandığı gibi işlenir.</li>
+      <li><strong>Hesap verileri</strong> (yalnızca giriş yaparsan): e-posta adresin ve güvenli biçimde
+          özetlenmiş (hash) parolan ya da “Google ile devam et” ile girersen Google hesap kimliğin, adın,
+          e-posta adresin ve profil fotoğrafının adresi (URL).</li>
+      <li><strong>Senkronlanan içerik</strong> (yalnızca giriş yaparsan): kayıtlı listelerin ve sonuç
+          geçmişin. Sonuçlar kendi yazdığın metinleri içerebilir; örneğin Sıra &amp; Takım'daki oyuncu
+          veya takım üyesi isimleri ya da Doğruluk-Cesaret'te gösterilen kartlar. Bu nedenle başkaları
+          için girdiğin isimler de geçmişinle birlikte saklanır ve senkronlanır.</li>
+      <li><strong>Satın almalar</strong>: RevenueCat ve Google Play tarafından yönetilen abonelik durumu ve
+          satın alma geçmişi. Ödeme kartı bilgilerini hiçbir zaman görmeyiz ve saklamayız.</li>
+      <li><strong>Hata ve teşhis verileri</strong>: hata raporları ve performans izlerinden bir örneklem
+          (ekranların ve ağ isteklerinin ne kadar sürdüğü), cihaz modeli, işletim sistemi ve uygulama
+          sürümü. Raporlara IP adresi eklenmez; raporlardaki istek adreslerinden sorgu parametreleri
+          silinir.</li>
+      <li><strong>Kullanım istatistikleri</strong> (isteğe bağlı; AB/BK'da “Anonim kullanım verisi
+          paylaş” anahtarını açmadıkça kapalı, diğer yerlerde varsayılan olarak açık): hangi özelliklerin
+          kullanıldığı (örneğin “sonuç üretildi” veya “abonelik ekranı görüntülendi”). Bu veriler rastgele
+          bir kimlikle ilişkilendirilir; adınla, e-postanla veya hesabınla asla ilişkilendirilmez.</li>
+      <li><strong>Reklam verileri</strong> (ücretsiz sürüm): Google AdMob tarafından toplanan reklam
+          kimliği, IP adresinden çıkarılan yaklaşık konum ve reklam etkileşimleri.</li>
+    </ul>
+    <p>Hatırlatıcılar cihazında oluşturulan yerel bildirimlerdir. Varsayılan olarak kapalıdırlar ve
+    bildirim iznini yalnızca sen hatırlatıcıları açtıktan sonra isteriz.</p>
+
+    <h2>3. Hizmet sağlayıcılar ve kullanım amaçları</h2>
+    <ul>
+      <li><strong>Google AdMob</strong> (Google Ireland Ltd / Google LLC): ücretsiz sürümde reklam göstermek
+          ve reklamları ölçmek. <em>Hukuki dayanak:</em> kişiselleştirilmiş reklamlar ve cihazında bilgi
+          saklanması için rızan (AB/BK'da Google'ın rıza formuyla alınır); diğer yerlerde kişiselleştirilmemiş
+          reklamlar ve dolandırıcılığın önlenmesi için meşru menfaat.
+          <a href="https://policies.google.com/privacy" target="_blank">Gizlilik politikası</a></li>
+      <li><strong>RevenueCat</strong> (RevenueCat Inc., ABD): abonelikleri yönetmek ve satın almaları geri
+          yüklemek. <em>Hukuki dayanak:</em> sözleşmenin ifası (aboneliğin).
+          <a href="https://www.revenuecat.com/privacy" target="_blank">Gizlilik politikası</a></li>
+      <li><strong>Sentry</strong> (Functional Software Inc.; AB veri bölgesi, Almanya): kilitlenme ve hata
+          raporlama ile performans izlerinden bir örneklem. <em>Hukuki dayanak:</em> uygulamanın çalışır ve
+          güvenli kalmasına yönelik meşru menfaat.
+          <a href="https://sentry.io/privacy/" target="_blank">Gizlilik politikası</a></li>
+      <li><strong>PostHog</strong> (PostHog Inc.; AB bulutu): isteğe bağlı anonim kullanım istatistikleri.
+          IP adresinden konum belirleme kapalıdır. <em>Hukuki dayanak:</em> AB/BK'da rızan; bu rızayı
+          uygulamayı ilk açtığında şartlar ekranındaki ya da Ayarlar'daki “Anonim kullanım verisi paylaş”
+          anahtarıyla verirsin. Bu, Google'ın reklam rıza formundan ayrıdır; o formda ölçüm rızasını geri
+          çekersen kullanım istatistikleri de kapanır. Diğer yerlerde uygulamayı geliştirmeye yönelik meşru
+          menfaat. İstediğin zaman Ayarlar → “Anonim kullanım verisi paylaş” üzerinden kapatabilirsin.
+          <a href="https://posthog.com/privacy" target="_blank">Gizlilik politikası</a></li>
+      <li><strong>Supabase</strong> (Supabase Inc.; AWS üzerinde Frankfurt, Almanya): hesaplar, giriş ve
+          listelerinle geçmişinin senkronizasyonu. Satır düzeyinde güvenlik sayesinde verilerini yalnızca
+          sen okuyabilirsin. <em>Hukuki dayanak:</em> sözleşmenin ifası (talep ettiğin hesap özellikleri).
+          <a href="https://supabase.com/privacy" target="_blank">Gizlilik politikası</a></li>
+      <li><strong>Google ile giriş</strong> (Google): yalnızca “Google ile devam et”i seçersen. Google adını,
+          e-posta adresini ve profil fotoğrafını bizimle paylaşır. <em>Hukuki dayanak:</em> sözleşmenin ifası.
+          <a href="https://policies.google.com/privacy" target="_blank">Gizlilik politikası</a></li>
+      <li><strong>Brevo</strong> (Sendinblue SAS, Fransa): Supabase'in e-posta doğrulama ve şifre sıfırlama
+          gibi hesap e-postalarını göndermek için kullandığı e-posta (SMTP) sağlayıcısı. Yalnızca e-posta
+          adresini alır. <em>Hukuki dayanak:</em> sözleşmenin ifası.
+          <a href="https://www.brevo.com/legal/privacypolicy/" target="_blank">Gizlilik politikası</a></li>
+    </ul>
+    <p>Kişisel verilerini satmayız, kiralamayız ve üçüncü tarafların pazarlaması için paylaşmayız.
+    <strong>Pro aboneler reklam görmez</strong> ve onlar için hiçbir reklam isteği yapılmaz.</p>
+
+    <h2>4. Yurt dışına aktarım</h2>
+    <p>Supabase, Sentry, PostHog ve Brevo verileri AB'de işler. Google ve RevenueCat verileri Amerika
+    Birleşik Devletleri'nde işleyebilir; bu aktarımlar AB–ABD Veri Gizliliği Çerçevesi'ne ve/veya Avrupa
+    Komisyonu'nun Standart Sözleşme Maddeleri'ne dayanır.</p>
+
+    <h2>5. Saklama süreleri</h2>
+    <ul>
+      <li><strong>Cihazında</strong>: sonuç geçmişi en fazla 10 gün (ücretsiz sürüm son 48 saati gösterir);
+          kayıtlı listeler sen silene kadar. Çıkış yapmak listeleri ve geçmişi cihazdan kaldırır.</li>
+      <li><strong>Hesap ve senkronlanan veriler</strong>: sen silene ya da hesabını silene kadar. Buluttaki
+          geçmiş en son 1.000 kayıtla sınırlıdır.</li>
+      <li><strong>Hata raporları</strong>: en fazla 90 gün.</li>
+      <li><strong>Kullanım istatistikleri</strong>: en fazla 12 ay; ardından silinir veya toplulaştırılır.</li>
+      <li><strong>Satın alma kayıtları</strong>: muhasebe ve vergi mevzuatının gerektirdiği süre boyunca.</li>
+    </ul>
+
+    <h2>6. Verilerini silme</h2>
+    <ul>
+      <li><strong>Uygulamada</strong>: Ayarlar → Hesabı Sil. Bu işlem senkronlanan listelerini ve geçmişini,
+          hesabını ve RevenueCat müşteri kaydını kalıcı olarak siler.</li>
+      <li><strong>Uygulama olmadan</strong>: <a href="https://ilkiner.github.io/pick-for-me/account-deletion.html#tr">hesap silme sayfasını</a> kullan ya da
+          <a href="mailto:pickforme.app@gmail.com">pickforme.app@gmail.com</a> adresine “Hesabımı sil” konulu bir e-posta gönder. 30 gün içinde yanıt veririz.</li>
+      <li><strong>Misafir verileri</strong> yalnızca cihazında bulunur; uygulamayı kaldırınca silinir.</li>
+      <li>Hesabını silmek aktif bir aboneliği iptal etmez; aboneliği Google Play → Ödemeler ve abonelikler
+          bölümünden iptal et.</li>
+    </ul>
+
+    <h2>7. Tercihlerin ve hakların</h2>
+    <ul>
+      <li><strong>Reklam rızası</strong> (AB/BK): Ayarlar → Gizlilik tercihleri'nden istediğin zaman
+          değiştirebilir veya geri çekebilirsin.</li>
+      <li><strong>Kullanım istatistikleri</strong>: Ayarlar → “Anonim kullanım verisi paylaş” ile açıp
+          kapatabilirsin.</li>
+      <li><strong>Reklam kimliği</strong>: Android ayarlarından sıfırlayabilir veya silebilirsin.</li>
+      <li>Yaşadığın yere bağlı olarak (örneğin GDPR kapsamında) verilerine erişme, bunları düzeltme, silme
+          veya dışa aktarma, işlenmesini kısıtlama veya işlenmesine itiraz etme ve rızanı istediğin zaman
+          geri çekme hakların vardır. <a href="mailto:pickforme.app@gmail.com">pickforme.app@gmail.com</a> adresine yaz. Yerel veri koruma otoritesine de şikâyette
+          bulunabilirsin.</li>
+    </ul>
+
+    <h2>8. Güvenlik</h2>
+    <p>Tüm veriler şifreli bağlantılar (HTTPS) üzerinden gönderilir. Giriş anahtarları (token) SecureStore
+    aracılığıyla Android Keystore'da saklanır. Buluttaki veriler satır düzeyinde güvenlikle korunur;
+    böylece her kullanıcı yalnızca kendi kayıtlarına erişebilir.</p>
+
+    <h2>9. Çocuklar</h2>
+    <p>Pick For Me 13 yaşından küçük çocuklar için tasarlanmamıştır ve onların kişisel verilerini bilerek
+    toplamayız. Reklamlar “G” (genel izleyici) derecesindeki içerikle sınırlıdır. Bir çocuğun bize kişisel
+    veri verdiğini düşünüyorsan bizimle iletişime geç, bu verileri sileriz.</p>
+
+    <h2>10. Bu politikadaki değişiklikler</h2>
+    <p>Bu politikayı uygulama veya mevzuat değiştiğinde güncelleyebiliriz. Yukarıdaki “Son güncelleme”
+    tarihi her zaman en güncel sürümü gösterir; önemli değişiklikler uygulama içinde duyurulur.</p>
+
+    <h2>11. İletişim</h2>
+    <p>Sorular veya veri talepleri: <a href="mailto:pickforme.app@gmail.com">pickforme.app@gmail.com</a></p>
+    </section>
+
+    <!-- ============ ESPAÑOL ============ -->
+    <section id="es" lang="es">
+    <div class="lang-divider">
+      <div class="logo">Pick For Me</div>
+    </div>
+
+    <header>
+      <h1>Política de Privacidad</h1>
+      <p class="meta">Última actualización: noviembre de 2026 &nbsp;·&nbsp; En vigor: noviembre de 2026</p>
+      <p class="meta">Esta política está disponible en inglés, turco y español. Si las versiones difieren,
+      prevalece la versión en inglés.</p>
+    </header>
+
+    <div class="highlight">
+      <p><strong>En resumen:</strong> puedes usar Pick For Me sin cuenta; en ese caso, tus listas y tu
+      historial se quedan en tu dispositivo. Si inicias sesión, se sincronizan con nuestra base de datos en
+      la UE. Los anuncios (versión gratuita) los sirve Google AdMob y, en la UE y el Reino Unido, te pedimos
+      primero tu consentimiento. Las estadísticas de uso anónimas son opcionales: en la UE y el Reino Unido
+      permanecen desactivadas salvo que des tu consentimiento; en el resto del mundo están activadas por
+      defecto y puedes desactivarlas cuando quieras en Ajustes. No vendemos tus datos.</p>
+    </div>
+
+    <h2>1. Responsable del tratamiento</h2>
+    <p>Pick For Me («nosotros») es el responsable del tratamiento de los datos personales descritos aquí.
+    Contacto: <a href="mailto:pickforme.app@gmail.com">pickforme.app@gmail.com</a>.</p>
+
+    <h2>2. Qué datos recogemos</h2>
+    <ul>
+      <li><strong>Sin cuenta (invitado)</strong>: tus listas guardadas, tu historial de resultados y tus
+          ajustes se guardan solo en tu dispositivo. Los anuncios, las compras, los informes de errores y
+          (si lo permites) las estadísticas de uso se tratan como se describe a continuación.</li>
+      <li><strong>Datos de la cuenta</strong> (solo si inicias sesión): tu dirección de correo electrónico y
+          una contraseña protegida con hash o, con «Continuar con Google», el ID de tu cuenta de Google, tu
+          nombre, tu dirección de correo electrónico y la URL de tu foto de perfil.</li>
+      <li><strong>Contenido sincronizado</strong> (solo si inicias sesión): tus listas guardadas y tu
+          historial de resultados. Los resultados pueden contener texto que escribes tú, por ejemplo, los
+          nombres de los jugadores o de los miembros de los equipos en Orden y Equipos o las cartas que se
+          muestran en Verdad o Reto; por tanto, los nombres de otras personas que introduces también se
+          guardan con tu historial y se sincronizan.</li>
+      <li><strong>Compras</strong>: estado de la suscripción e historial de compras, gestionados por
+          RevenueCat y Google Play. Nunca vemos ni guardamos los datos de tu tarjeta de pago.</li>
+      <li><strong>Datos de errores y diagnóstico</strong>: informes de errores y una muestra de trazas de
+          rendimiento (cuánto tardan las pantallas y las solicitudes de red), modelo del dispositivo,
+          sistema operativo y versión de la app. Las direcciones IP no se adjuntan a los informes, y se
+          eliminan los parámetros de consulta de las direcciones de solicitud que contienen.</li>
+      <li><strong>Estadísticas de uso</strong> (opcionales; desactivadas en la UE y el Reino Unido salvo que
+          actives «Compartir datos de uso anónimos», activadas por defecto en el resto del mundo): qué
+          funciones se usan (por ejemplo, «resultado generado» o «pantalla de suscripción vista»),
+          vinculadas a un identificador aleatorio y nunca a tu nombre, tu correo electrónico o tu cuenta.</li>
+      <li><strong>Datos publicitarios</strong> (versión gratuita): ID de publicidad, ubicación aproximada
+          derivada de tu dirección IP e interacciones con los anuncios, recogidos por Google AdMob.</li>
+    </ul>
+    <p>Los recordatorios son notificaciones locales creadas en tu dispositivo. Están desactivados por
+    defecto y solo te pedimos el permiso de notificaciones después de que los actives.</p>
+
+    <h2>3. Proveedores de servicios y para qué los usamos</h2>
+    <ul>
+      <li><strong>Google AdMob</strong> (Google Ireland Ltd / Google LLC): mostrar y medir anuncios en la
+          versión gratuita. <em>Base jurídica:</em> tu consentimiento para los anuncios personalizados y
+          para almacenar información en tu dispositivo (UE/Reino Unido, recogido mediante el formulario de
+          consentimiento de Google); interés legítimo para los anuncios no personalizados y la prevención
+          del fraude en el resto del mundo.
+          <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad</a></li>
+      <li><strong>RevenueCat</strong> (RevenueCat Inc., EE. UU.): gestionar las suscripciones y restaurar
+          las compras. <em>Base jurídica:</em> ejecución del contrato (tu suscripción).
+          <a href="https://www.revenuecat.com/privacy" target="_blank">Política de privacidad</a></li>
+      <li><strong>Sentry</strong> (Functional Software Inc.; región de datos de la UE, Alemania): informes
+          de fallos y errores, y una muestra de trazas de rendimiento. <em>Base jurídica:</em> interés
+          legítimo en mantener la app operativa y segura.
+          <a href="https://sentry.io/privacy/" target="_blank">Política de privacidad</a></li>
+      <li><strong>PostHog</strong> (PostHog Inc.; nube de la UE): estadísticas de uso anónimas opcionales.
+          La localización a partir de direcciones IP está desactivada. <em>Base jurídica:</em> en la UE y
+          el Reino Unido, tu consentimiento, que das con el interruptor «Compartir datos de uso anónimos»
+          en la pantalla de términos al abrir la app por primera vez o en Ajustes. Es independiente del
+          formulario de consentimiento publicitario de Google; si retiras en ese formulario el
+          consentimiento de medición, las estadísticas de uso también se desactivan. En el resto del mundo,
+          interés legítimo en mejorar la app. Puedes desactivarlas cuando quieras en Ajustes → «Compartir
+          datos de uso anónimos».
+          <a href="https://posthog.com/privacy" target="_blank">Política de privacidad</a></li>
+      <li><strong>Supabase</strong> (Supabase Inc.; alojado en AWS en Fráncfort, Alemania): cuentas, inicio
+          de sesión y sincronización de tus listas e historial. La seguridad a nivel de fila garantiza que
+          solo tú puedas leer tus datos. <em>Base jurídica:</em> ejecución del contrato (las funciones de
+          cuenta que solicitaste).
+          <a href="https://supabase.com/privacy" target="_blank">Política de privacidad</a></li>
+      <li><strong>Inicio de sesión con Google</strong> (Google): solo si eliges «Continuar con Google».
+          Google comparte con nosotros tu nombre, tu dirección de correo electrónico y tu foto de perfil.
+          <em>Base jurídica:</em> ejecución del contrato.
+          <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad</a></li>
+      <li><strong>Brevo</strong> (Sendinblue SAS, Francia): el proveedor de correo electrónico (SMTP) que
+          usa Supabase para enviar los correos de la cuenta, como la verificación del correo y el
+          restablecimiento de la contraseña. Solo recibe tu dirección de correo electrónico.
+          <em>Base jurídica:</em> ejecución del contrato.
+          <a href="https://www.brevo.com/legal/privacypolicy/" target="_blank">Política de privacidad</a></li>
+    </ul>
+    <p>No vendemos, alquilamos ni compartimos tus datos personales para el marketing de terceros.
+    <strong>Los suscriptores Pro no ven anuncios</strong> y no se realiza ninguna solicitud de anuncios
+    para ellos.</p>
+
+    <h2>4. Transferencias internacionales</h2>
+    <p>Supabase, Sentry, PostHog y Brevo tratan los datos en la UE. Google y RevenueCat pueden tratar datos
+    en Estados Unidos; estas transferencias se basan en el Marco de Privacidad de Datos UE-EE. UU. y/o en
+    las Cláusulas Contractuales Tipo de la Comisión Europea.</p>
+
+    <h2>5. Cuánto tiempo conservamos los datos</h2>
+    <ul>
+      <li><strong>En tu dispositivo</strong>: el historial de resultados, hasta 10 días (la versión gratuita
+          muestra las últimas 48 horas); las listas guardadas, hasta que las elimines. Al cerrar sesión, las
+          listas y el historial se eliminan del dispositivo.</li>
+      <li><strong>Cuenta y datos sincronizados</strong>: hasta que los elimines o elimines tu cuenta. El
+          historial en la nube se limita a las 1.000 entradas más recientes.</li>
+      <li><strong>Informes de errores</strong>: hasta 90 días.</li>
+      <li><strong>Estadísticas de uso</strong>: hasta 12 meses; después se eliminan o se agregan.</li>
+      <li><strong>Registros de compra</strong>: durante el tiempo que exija la normativa contable y fiscal.</li>
+    </ul>
+
+    <h2>6. Eliminar tus datos</h2>
+    <ul>
+      <li><strong>En la app</strong>: Ajustes → Eliminar cuenta. Esto elimina de forma permanente tus listas
+          e historial sincronizados, tu cuenta y tu registro de cliente en RevenueCat.</li>
+      <li><strong>Sin la app</strong>: usa la <a href="https://ilkiner.github.io/pick-for-me/account-deletion.html#es">página de eliminación de cuenta</a> o
+          escribe a <a href="mailto:pickforme.app@gmail.com">pickforme.app@gmail.com</a> con el asunto «Eliminar mi cuenta». Respondemos en un plazo de 30 días.</li>
+      <li><strong>Los datos de invitado</strong> solo existen en tu dispositivo; se eliminan al desinstalar
+          la app.</li>
+      <li>Eliminar tu cuenta no cancela una suscripción activa; cancélala en Google Play → Pagos y
+          suscripciones.</li>
+    </ul>
+
+    <h2>7. Tus opciones y derechos</h2>
+    <ul>
+      <li><strong>Consentimiento publicitario</strong> (UE/Reino Unido): puedes cambiarlo o retirarlo
+          cuando quieras en Ajustes → Opciones de privacidad.</li>
+      <li><strong>Estadísticas de uso</strong>: actívalas o desactívalas en Ajustes → «Compartir datos de
+          uso anónimos».</li>
+      <li><strong>ID de publicidad</strong>: restablécelo o elimínalo en los ajustes de Android.</li>
+      <li>Según dónde vivas (por ejemplo, en virtud del RGPD), tienes derecho a acceder a tus datos,
+          rectificarlos, suprimirlos o exportarlos, a limitar su tratamiento o a oponerte a él, y a retirar
+          tu consentimiento en cualquier momento. Escribe a <a href="mailto:pickforme.app@gmail.com">pickforme.app@gmail.com</a>. También puedes presentar una
+          reclamación ante tu autoridad local de protección de datos.</li>
+    </ul>
+
+    <h2>8. Seguridad</h2>
+    <p>Todos los datos se envían mediante conexiones cifradas (HTTPS). Los tokens de inicio de sesión se
+    guardan en el Android Keystore mediante SecureStore. Los datos en la nube están protegidos por
+    seguridad a nivel de fila, de modo que cada usuario solo puede acceder a sus propios registros.</p>
+
+    <h2>9. Menores</h2>
+    <p>Pick For Me no está destinada a menores de 13 años y no recogemos a sabiendas sus datos personales.
+    Los anuncios se limitan a contenido clasificado como «G» (para todos los públicos). Si crees que un
+    menor nos ha facilitado datos personales, contacta con nosotros y los eliminaremos.</p>
+
+    <h2>10. Cambios en esta política</h2>
+    <p>Podemos actualizar esta política cuando cambien la app o la ley. La fecha de «Última actualización»
+    que aparece arriba indica siempre la versión más reciente; los cambios importantes se anunciarán en
+    la app.</p>
+
+    <h2>11. Contacto</h2>
+    <p>Preguntas o solicitudes sobre tus datos: <a href="mailto:pickforme.app@gmail.com">pickforme.app@gmail.com</a></p>
+    </section>
 
     <footer>
-      <p>© 2026 Pick For Me. All rights reserved.</p>
+      <p>© 2026 Pick For Me. All rights reserved. / Tüm hakları saklıdır. / Todos los derechos reservados.</p>
       <p style="margin-top:8px">
         <a href="mailto:pickforme.app@gmail.com">Contact</a>
         &nbsp;·&nbsp;
